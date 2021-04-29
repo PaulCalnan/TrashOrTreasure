@@ -13,7 +13,6 @@
 //= require rails-ujs
 //= require jquery.min
 //= require jquery
-
 //= require bootstrap.min
 //= require bootstrap-sprockets
 //= require_tree .

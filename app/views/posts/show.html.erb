@@ -1,22 +1,32 @@
-
 <h1><%= @post.title %></h1>
+
 <% id = @post.user_id %>
 <% user = User.find(id) %>
-<p>Posted by <%= user.name %> on <%= @post.created_at.strftime '%A, %B %e, %Y' %></p>
+
+<p>
+  Posted by <%= user.name %> on <%= @post.created_at.strftime '%A, %B %e, %Y' %>
+</p>
+
 <div class="indexPic">
-<%= cl_image_tag @post.image %>
+  <%= cl_image_tag @post.image %>
 </div>
+
 <div class="remark">
-<% @post.comments.each do |comment| %>
-<div class="comment">
-  <% creator = comment.user_id %>
-  <% user = User.find(creator) %>
-  <p class="commentBy">Comment by <%= user.name %> on <%= comment.created_at.strftime '%A, %B %e, %Y' %></p>
-  <%= comment.remark %>
-  <% if comment.user_id == @current_user.id %>
-  <%= link_to 'Delete', post_comment_path(@post, comment), :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
-  <% end %>
-</div>
+  <% @post.comments.each do |comment| %>
+
+  <div class="comment">
+    <% creator = comment.user_id %>
+    <% user = User.find(creator) %>
+
+    <p class="commentBy">Comment by
+      <%= user.name %> on <%= comment.created_at.strftime '%A, %B %e, %Y' %>
+    </p>
+
+    <%= comment.remark %>
+    <% if comment.user_id == @current_user.id %>
+    <%= link_to 'Delete', post_comment_path(@post, comment), :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+    <% end %>
+  </div>
 <% end %>
 </div>
 
@@ -26,5 +36,4 @@
   <div class="controls">
     <%= link_to 'Delete Post', @post, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
   </div>
-
 <% end %>
