@@ -1,0 +1,7 @@
+<h1> All Items </h1>
+
+<% @posts.each do |post| %>
+<span class="index">
+<%= link_to cl_image_tag(post.image, :class => 'thumb'), post %>
+</span>
+<% end %>

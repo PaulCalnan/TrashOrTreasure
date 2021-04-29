@@ -1,0 +1,15 @@
+<%=  form_for @post, :html => {:multipart => true} do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :image %>
+  <%= f.cl_image_upload :image, :required => true %>
+
+
+  <%= f.submit %>
+
+<% end %>
