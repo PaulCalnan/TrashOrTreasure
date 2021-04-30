@@ -19,6 +19,16 @@
    background-image: url('background.jpeg');
 }
 
+.feature {
+  border-style: solid;
+  border-color: white;
+  border-width: 25px;
+  border-radius: 5px;
+  margin: 10px;
+  max-width: 50em;
+
+}
+
  .comment {
    border: 2px solid grey;
    padding: 5px;
@@ -26,6 +36,11 @@
  }
 
  .thumb {
+   border-style: solid;
+   border-color: white;
+   border-width: 10px;
+   border-radius: 5px;
+   margin: 10px;
    height: 12em;
  }
 

@@ -7,8 +7,8 @@
   Posted by <%= user.name %> on <%= @post.created_at.strftime '%A, %B %e, %Y' %>
 </p>
 
-<div class="indexPic">
-  <%= cl_image_tag @post.image %>
+<div>
+  <%= cl_image_tag @post.image, :class => 'feature' %>
 </div>
 
 <div class="remark">
