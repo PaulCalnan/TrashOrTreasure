@@ -33,13 +33,13 @@ A Post HAS_MANY Comments
 
 ## Installation
 
-Clone Repo then change directory into "crudbud" folder.  
+Clone Repo then change directory into folder.  
 (Assuming you have Ruby and Rails versions above)  
 Then from your command line..  
 
 ```
 $ git clone https://github.com/PaulCalnan/project1.git
-$ cd crudbud
+$ cd (your_folder_name)
 $ rails db:create
 $ rails db:migrate
 $ rails db:seed
