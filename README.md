@@ -1,24 +1,54 @@
-# README
+# Project_1
+# Trash or Treasure
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Very basic CRUD with simple entity relationships.
+Allows a user to sign up or log in.
+Once logged in, the user can post an image to which other users can comment.
 
-Things you may want to cover:
 
-* Ruby version
+### TODOs (marked if implemented):
 
-* System dependencies
+- [ ]  Further styling.
+- [ ]  Ability to edit a comment or post.
+- [ ]  Ability to upload more than one image.
+- [ ]  AWS for uploads (currently cloudinary).
 
-* Configuration
+#### Built with:
 
-* Database creation
+ - Ruby 2.7.3
+ - Rails 5.2.5
+ - HTML
+ - CSS
 
-* Database initialization
+#### Entity Relationships:
 
-* How to run the test suite
+ ![relationship diagram](/trash_erd.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+##
 
-* Deployment instructions
+## Installation
 
-* ...
+Clone Repo and the change directory into crudbud folder,
+then, from the command line..
+
+```
+$ git clone https://github.com/PaulCalnan/project1.git
+$ cd crudbud
+$ rails db:create
+$ rails db:seed
+$ rails server
+```
+
+## Live version on Heroku
+
+[Try it here!.. ](https://trash-treasure.herokuapp.com/login)
+
+## Screen shots
+
+Log In screen..
+
+![Log in screen](/trash_login.png)
+
+Post page with comments..
+
+![Post screen](/trash_show1.png)
