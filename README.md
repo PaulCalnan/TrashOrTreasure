@@ -1,8 +1,10 @@
 # Project_1
 # Trash or Treasure
 
-Very basic CRUD with simple entity relationships.
-Allows a user to sign up or log in.
+Very basic Rails CRUD with simple entity relationships.  
+
+Allows a user to sign up or log in.  
+
 Once logged in, the user can post an image to which other users can comment.
 
 
@@ -22,26 +24,38 @@ Once logged in, the user can post an image to which other users can comment.
 
 #### Entity Relationships:
 
- ![relationship diagram](/trash_erd.png)
+A User HAS_MANY Comments  
+
+A User HAS_MANY Posts  
+
+A Post HAS_MANY Comments  
+
+
+ ![relationship diagram](/trash-erd.png)
 
 ##
 
 ## Installation
 
-Clone Repo and the change directory into crudbud folder,
-then, from the command line..
+Clone Repo then change directory into "crudbud" folder.  
+
+(Assuming you have Ruby and Rails versions above)  
+
+Then from your command line..  
 
 ```
 $ git clone https://github.com/PaulCalnan/project1.git
 $ cd crudbud
 $ rails db:create
+$ rails db:migrate
 $ rails db:seed
+$ rails bundle
 $ rails server
 ```
 
 ## Live version on Heroku
 
-[Try it here!.. ](https://trash-treasure.herokuapp.com/login)
+[Try Trash or Treasure here!.. ](https://trash-treasure.herokuapp.com/login)
 
 ## Screen shots
 
