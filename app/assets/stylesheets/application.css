@@ -62,3 +62,13 @@
    max-width: 250px;
    color: red;
  }
+
+ .newform {
+   margin: 0 auto;
+   max-width: 500px;
+ }
+
+ .cloudinary-fileupload {
+   margin-left: 190px;
+   padding: 10px;
+ }
