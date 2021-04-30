@@ -2,9 +2,7 @@
 # Trash or Treasure
 
 Very basic Rails CRUD with simple entity relationships.  
-
 Allows a user to sign up or log in.  
-
 Once logged in, the user can post an image to which other users can comment.
 
 
@@ -12,8 +10,8 @@ Once logged in, the user can post an image to which other users can comment.
 
 - [ ]  Further styling.
 - [ ]  Ability to edit a comment or post.
-- [ ]  Ability to upload more than one image.
-- [ ]  AWS for uploads (currently cloudinary).
+- [ ]  Ability to upload more than one image per post.
+- [ ]  Implement AWS for uploads (currently cloudinary).
 
 #### Built with:
 
@@ -25,9 +23,7 @@ Once logged in, the user can post an image to which other users can comment.
 #### Entity Relationships:
 
 A User HAS_MANY Comments  
-
 A User HAS_MANY Posts  
-
 A Post HAS_MANY Comments  
 
 
@@ -38,9 +34,7 @@ A Post HAS_MANY Comments
 ## Installation
 
 Clone Repo then change directory into "crudbud" folder.  
-
 (Assuming you have Ruby and Rails versions above)  
-
 Then from your command line..  
 
 ```
