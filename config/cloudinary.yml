@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: paulyc
-  api_key: '693456347199432'
-  api_secret: VVHpx4DjJRX2LcYQ4rO26f73HNE
+  cloud_name: Rails.application.secrets.cloudinary_cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
   enhance_image_tag: true
   static_file_support: false
 production:
-  cloud_name: paulyc
-  api_key: '693456347199432'
-  api_secret: VVHpx4DjJRX2LcYQ4rO26f73HNE
+  cloud_name: Rails.application.secrets.cloudinary_cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
   enhance_image_tag: true
   static_file_support: true
 test:
-  cloud_name: paulyc
-  api_key: '693456347199432'
-  api_secret: VVHpx4DjJRX2LcYQ4rO26f73HNE
+  cloud_name: Rails.application.secrets.cloudinary_cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
   enhance_image_tag: true
   static_file_support: false
